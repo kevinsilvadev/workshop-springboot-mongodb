@@ -43,6 +43,10 @@ public class Instatiation implements CommandLineRunner {
 		
 		postRepo.saveAll(Arrays.asList(p1, p2));
 		
+		maria.getPosts().addAll(Arrays.asList(p1, p2));
+		userRepo.saveAll(Arrays.asList(maria));
+	
+		
 		
 	}
 	
